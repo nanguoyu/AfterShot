@@ -6,7 +6,11 @@ This tool tries to recognise an image file in clipboard.
 
 ## Install
 
-todo
+``` 
+git https://github.com/nanguoyu/AfterShot.git
+cd AfterShot
+pip install .
+```
 
 ## Config your api
 
