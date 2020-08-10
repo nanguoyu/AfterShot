@@ -22,7 +22,7 @@ Fill APIKey and SecretKey in  config.yaml
  
 Start service
 ``` 
-run main.py
+python main.py
 ```
 
 When you get a screen capture, you press F2 and the result will be copied to clipboard
