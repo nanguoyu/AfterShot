@@ -11,7 +11,7 @@ from core import baiduOCR
 from io import BytesIO
 import pyperclip
 
-with open('config_dev.yml', 'r') as f:
+with open('config.yml', 'r') as f:
     config = yaml.load(f.read())
 if not config:
     raise ValueError("wrong config")

@@ -25,4 +25,4 @@ Start service
 run main.py
 ```
 
-When you get a screen capture, you press F2 and get result.
+When you get a screen capture, you press F2 and the result will be copied to clipboard
