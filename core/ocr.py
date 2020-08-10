@@ -13,7 +13,7 @@ class baiduOCR(object):
 
     def _get_access_token(self, AK, SK):
         host = 'https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=%s&client_secret=%s' % (
-        AK, SK)
+            AK, SK)
         response = requests.get(host)
         if response:
             access_token = response.json()['access_token']
@@ -31,3 +31,9 @@ class baiduOCR(object):
         response = requests.post(request_url, data=params, headers=headers)
         if response:
             print(response.json())
+            rj = response.json()
+            r = ""
+            for i in range(rj['words_result_num']):
+                r = r + rj['words_result'][i]['words'] + "\n"
+
+            return r

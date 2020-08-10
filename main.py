@@ -1,6 +1,7 @@
 # Date : 2020-07-17
 # Author : Dong Wang
 
+import sys
 from PIL import ImageGrab
 from PIL import Image
 import base64
@@ -8,7 +9,9 @@ import yaml
 from pynput import keyboard
 from core import baiduOCR
 from io import BytesIO
-with open('config.yml', 'r') as f:
+import pyperclip
+
+with open('config_dev.yml', 'r') as f:
     config = yaml.load(f.read())
 if not config:
     raise ValueError("wrong config")
@@ -21,7 +24,8 @@ def copy_img():
         img_buffer = BytesIO()
         img.save(img_buffer, 'png')
         img = base64.b64encode(img_buffer.getvalue())
-        bd.ocr(img)
+        text = bd.ocr(img)
+        pyperclip.copy(text)
 
 
 def on_press(key):
@@ -41,7 +45,6 @@ def on_release(key):
         copy_img()
 
 
-# Collect events until released
 with keyboard.Listener(
         on_press=on_press,
         on_release=on_release) as listener:
