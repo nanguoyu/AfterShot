@@ -20,9 +20,19 @@ Fill APIKey and SecretKey in  config.yaml
 
 ## Quick start
  
-Start service
-``` 
-python main.py
-```
+1. Start service
 
-When you get a screen capture, you press F2 and the result will be copied to clipboard
+    ``` 
+    python main.py
+    ``` 
+
+2. Take a screenshot 
+ 
+    I recommend you to use [snipaste](https://zh.snipaste.com/) get a screen capture. For example, F1 is the hot key to
+    get screenshot in my MacBookPro. Then I copy the imag in the clipboard.
+    
+3. Recognition
+    
+    Press F2, this tool would try to convert the image in the clipboard to words and then copy results to the clipboard.
+    
+ 
