@@ -1,5 +1,7 @@
 ## Introduction
 
+[中文介绍](./README_CN.md)
+
 This is an OCR tool without any function of screenshot. There are
 a lot of screen capture tools and no needs to build a new one. 
 This tool tries to recognise an image file in clipboard.
