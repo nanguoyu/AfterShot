@@ -8,8 +8,8 @@ This tool tries to recognise an image file in clipboard.
 
 ## Install
 
-``` 
-git https://github.com/nanguoyu/AfterShot.git
+```Shell 
+git clone https://github.com/nanguoyu/AfterShot.git
 cd AfterShot
 pip install .
 ```
