@@ -10,8 +10,8 @@ AfterShot没有截图功能，需要依赖其他截图工具例如：snipaste、
 
 ## 下载安装
 
-```python
-git https://github.com/nanguoyu/AfterShot.git
+```shell
+git clone https://github.com/nanguoyu/AfterShot.git
 cd AfterShot
 pip install .
 ```
