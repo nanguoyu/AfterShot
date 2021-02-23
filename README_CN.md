@@ -31,7 +31,7 @@ pip install -r requirements.txt
 1. 启动程序
 
     ``` 
-    python AfterShot.py --config=config_dev.yml
+    python AfterShot.py --config=config.yml
     ``` 
 
 2. 将截图/网络图片/本地图片复制到剪贴板

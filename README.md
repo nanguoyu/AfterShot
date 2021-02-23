@@ -25,7 +25,7 @@ Fill APIKey and SecretKey in  config.yaml
 1. Start service
 
     ``` 
-    python AfterShot.py --config=config_dev.yml
+    python AfterShot.py --config=config.yml
     ``` 
 
 2. Take a screenshot 
