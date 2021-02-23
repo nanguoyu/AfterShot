@@ -10,10 +10,11 @@ AfterShot没有截图功能，需要依赖其他截图工具例如：snipaste、
 
 ## 下载安装
 
-```python
+
+``` 
 git https://github.com/nanguoyu/AfterShot.git
 cd AfterShot
-pip install .
+pip install -r requirements.txt
 ```
 
 ## 配置
@@ -29,9 +30,9 @@ pip install .
 
 1. 启动程序
 
-	```python
-	python main.py
-	```
+    ``` 
+    python AfterShot.py --config=config_dev.yml
+    ``` 
 
 2. 将截图/网络图片/本地图片复制到剪贴板
 3. 按下F2，获得识别结果。（根据网络状况不同，可能需要等待1秒）
