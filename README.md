@@ -11,7 +11,7 @@ This tool tries to recognise an image file in clipboard.
 ```Shell 
 git clone https://github.com/nanguoyu/AfterShot.git
 cd AfterShot
-pip install .
+pip install -r requirements.txt
 ```
 
 ## Config your api
@@ -25,7 +25,7 @@ Fill APIKey and SecretKey in  config.yaml
 1. Start service
 
     ``` 
-    python main.py
+    python AfterShot.py --config=config.yml
     ``` 
 
 2. Take a screenshot 
